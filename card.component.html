@@ -1,0 +1,24 @@
+
+<!-- **********    Card   ************* -->
+
+<div class="container  text-center">
+    <div class="row">
+        <div class="col-lg-3 d-flex align-items" *ngFor="let x of productscard">
+
+            <div class="card">
+                <div class="card-body">
+                    <h6> {{x.title}} </h6>  <br>
+                    <p> price: <b> ${{x.price }}</b> </p>
+
+                    <img [src]="x.image" alt="{{ x.title }}" class="rounded mx-auto d-block" width="80" height="80">
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-bottom">
+                    <a class="btn btn-outline-primary" [routerLink]="['/view/', x.id]"> View Details </a>
+                    <button class="btn btn-outline-danger" (click)="remove(x.id)"> remove </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

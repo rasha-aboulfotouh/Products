@@ -1,0 +1,22 @@
+
+.row {
+    margin-top: 100px;
+}
+
+
+
+.card {
+    background-color: rgb(238, 232, 225);
+    margin-bottom: 35px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.btn {
+ 
+    margin-top: 15px;
+    margin-left: 10px;
+
+    margin-bottom: 10px;
+   
+}

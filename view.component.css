@@ -1,0 +1,24 @@
+.row {
+    margin-top: 100px;
+
+}
+
+
+
+.rounded {
+    margin-top: 60px;
+
+}
+
+
+.card {
+    border-color: lightcyan;
+
+}
+
+.btn {
+    width: 50%;
+
+    align-items: center;
+    background-color: rgb(218, 165, 165);
+}

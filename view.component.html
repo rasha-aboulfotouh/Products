@@ -1,0 +1,33 @@
+
+<!-- **********   View   ************* -->
+
+<div class=" container w-80 mt-5 text-center" *ngIf="product | async as prod">
+
+    <div class="row">
+
+        <div class="col-5">
+            <img [src]="prod.image" alt="{{ prod.title }}" class="rounded mx-auto d-block" width="350" height="200">
+        </div>
+
+        <div class="col-7">
+
+            <div class="card">
+
+                <div class="card-body">
+                    <h2 class="card-title"> {{ prod.title}} </h2>
+                    <p class="card-text">Price: <b> $ {{ prod.price }} </b> </p>
+
+                    <p class="card-text">{{ prod.description }} </p>
+                    <p class="card-text">{{ prod.category }} </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <pre></pre>
+
+    <a [routerLink]="['/']" class="btn"> Go Back </a>
+</div>
